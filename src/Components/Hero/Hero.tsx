@@ -37,11 +37,25 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-  height: 40px;
+  height: 50px;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #123456;
+  color: white;
+
+  transition: all 360ms;
+  cursor: pointer;
+  :hover {
+    background-color: transparent;
+    color: #123456;
+    transform: scale(0.9);
+  }
 `;
 const Heading = styled.div`
   font-size: 60px;
