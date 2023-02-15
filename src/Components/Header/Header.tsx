@@ -12,29 +12,19 @@ const Header = () => {
       <Wrapper>
         <Logo src={logo} />
         <Middle>
+          <Span>home</Span>
+          <Span>about</Span>
+          <Span>service</Span>
+          <Span>prouct</Span>
           <Span>
-            men
             <Icon>
-              <HiOutlineChevronDown />
+              <FiSearch />
             </Icon>
+            search
           </Span>
-          <Span>women</Span>
-          <Span>beauty</Span>
-          <Span>sport</Span>
-          <Span>
-            templates
-            <Icon>
-              <HiOutlineChevronDown />
-            </Icon>
-          </Span>
-          <Span>
-            explore
-            <Icon>
-              <HiOutlineChevronDown />
-            </Icon>
-          </Span>
+          <Span>explore</Span>
         </Middle>
-        <Right>
+        {/* <Right>
           <IconWrap>
             <FiSearch />
           </IconWrap>
@@ -44,13 +34,24 @@ const Header = () => {
           <AddToCart>
             <BsCartDash />
           </AddToCart>
-        </Right>
+        </Right> */}
+        <Button>get started</Button>
       </Wrapper>
     </Container>
   );
 };
 
 export default Header;
+
+const Button = styled.div`
+  width: 178px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+`;
 
 const Container = styled.div`
   height: 70px;
@@ -83,15 +84,27 @@ const Span = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  cursor: pointer;
+  margin-right: 23px;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0, 0.8);
+  font-weight: 500;
 `;
 const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3px;
-  margin-left: 6px;
+  margin-right: 2px;
+  color: rgb(0, 0, 0, 0.3);
 `;
-const Right = styled.div``;
-const IconWrap = styled.div``;
+const Right = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const IconWrap = styled.div`
+  margin-right: 20px;
+  font-size: 25px;
+`;
 const AddToCart = styled.div``;
