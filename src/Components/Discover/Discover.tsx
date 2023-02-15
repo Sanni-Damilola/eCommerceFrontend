@@ -29,7 +29,6 @@ const Text2 = styled.div`
   color: black;
   font-weight: 500;
   font-size: 20px;
-  background-color: red;
   text-align: center;
 `;
 const Button = styled.button`
@@ -39,6 +38,8 @@ const Button = styled.button`
   border-radius: 50px;
   background-color: white;
   font-weight: 400;
+  margin-top: 100px;
+  cursor: pointer;
   color: #535e6c;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 `;
@@ -52,7 +53,7 @@ const Slider = styled.div`
 `;
 const CardWrapper = styled.div`
   width: 500px;
-  height: 260px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +67,6 @@ const CardWrapper = styled.div`
 `;
 const Details = styled.div`
   flex-direction: column;
-  justify-content: space-around;
   display: flex;
   height: 100%;
   align-items: center;
