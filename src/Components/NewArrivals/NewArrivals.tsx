@@ -19,9 +19,7 @@ const NewArrivals = () => {
             <Amount></Amount>
             <Reviews>
               <Icon></Icon>
-              <Text>
-                "4.1 (50 reviews)"
-              </Text>
+              <Text>"4.1 (50 reviews)"</Text>
             </Reviews>
           </Wrap>
         </Card>
@@ -33,6 +31,17 @@ const NewArrivals = () => {
 export default NewArrivals;
 
 const Wrapper = styled.div``;
+const Card = styled.div``;
+const Hold = styled.div``;
+const Love = styled.div``;
+const Image = styled.div``;
+const Title = styled.div``;
+const Category = styled.div``;
+const Wrap = styled.div``;
+const Amount = styled.div``;
+const Reviews = styled.div``;
+const Icon = styled.div``;
+const Text = styled.div``;
 
 const Container = styled.div`
   margin-top: 100px;
