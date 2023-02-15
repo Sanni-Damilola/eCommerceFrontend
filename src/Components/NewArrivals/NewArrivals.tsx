@@ -5,8 +5,11 @@ const NewArrivals = () => {
   return (
     <Container>
       <Head>
-        Discover more. <Notice>Good things are waiting for you</Notice>{" "}
+        New Arrivals. <Notice> REY backpacks & bags</Notice>{" "}
       </Head>
+      <Wrapper>
+        
+      </Wrapper>
     </Container>
   );
 };
