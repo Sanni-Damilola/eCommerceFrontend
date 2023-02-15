@@ -7,14 +7,14 @@ const Hero = () => {
   return (
     <Container>
       <First>
-        <Title>hero In this season, find the best 🔥</Title>
+        {/* <Title>hero In this season, find the best 🔥</Title>
         <Heading>
           Exclusive collection <br /> for everyone
         </Heading>
         <Button>
           Explore
           <RiSearch2Line />
-        </Button>
+        </Button> */}
       </First>
       <Second src={img} />
     </Container>
