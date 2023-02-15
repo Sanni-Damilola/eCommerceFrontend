@@ -44,13 +44,20 @@ const Header = () => {
 export default Header;
 
 const Button = styled.div`
-  width: 178px;
+  width: 150px;
   height: 40px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: #123456;
+  color: white;
+  cursor: pointer;
+  transform: all 360ms;
+  text-transform: capitalize;
+  :hover {
+    background-color: #123456f4;
+  }
 `;
 
 const Container = styled.div`
@@ -94,8 +101,8 @@ const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3px;
-  margin-right: 2px;
+  margin-top: 2px;
+  margin-right: 4px;
   color: rgb(0, 0, 0, 0.3);
 `;
 const Right = styled.div`
