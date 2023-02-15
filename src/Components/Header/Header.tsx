@@ -16,26 +16,18 @@ const Header = () => {
           <Span>about</Span>
           <Span>service</Span>
           <Span>prouct</Span>
-          <Span>
-            <Icon>
-              <FiSearch />
-            </Icon>
-            search
-          </Span>
+          <Span>search</Span>
           <Span>explore</Span>
         </Middle>
-        {/* <Right>
+        <Right>
           <IconWrap>
             <FiSearch />
-          </IconWrap>
-          <IconWrap>
-            <RxPerson />
           </IconWrap>
           <AddToCart>
             <BsCartDash />
           </AddToCart>
-        </Right> */}
-        <Button>get started</Button>
+          <Button>get started</Button>
+        </Right>
       </Wrapper>
     </Container>
   );
@@ -114,4 +106,7 @@ const IconWrap = styled.div`
   margin-right: 20px;
   font-size: 25px;
 `;
-const AddToCart = styled.div``;
+const AddToCart = styled.div`
+  font-size: 20px;
+  margin-right: 10px;
+`;

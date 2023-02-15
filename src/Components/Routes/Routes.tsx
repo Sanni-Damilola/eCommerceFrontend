@@ -9,28 +9,28 @@ import Women from "../Women/Women";
 
 const Routes = () => {
   const element = useRoutes([
+    // {
+    //   path: "/",
+    //   element: <Men />,
+    // },
+    // {
+    //   path: "/women",
+    //   element: <Women />,
+    // },
+    // {
+    //   path: "/beauty",
+    //   element: <Sport />,
+    // },
+    // {
+    //   path: "/templates",
+    //   element: <Templates />,
+    // },
+    // {
+    //   path: "/explore",
+    //   element: <Explore />,
+    // },
     {
       path: "/",
-      element: <Men />,
-    },
-    {
-      path: "/women",
-      element: <Women />,
-    },
-    {
-      path: "/beauty",
-      element: <Sport />,
-    },
-    {
-      path: "/templates",
-      element: <Templates />,
-    },
-    {
-      path: "/explore",
-      element: <Explore />,
-    },
-    {
-      path: "/homescreen",
       element: <HomeScreen />,
     },
   ]);
