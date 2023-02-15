@@ -8,13 +8,17 @@ const NewArrivals = () => {
         New Arrivals. <Notice> REY backpacks & bags</Notice>{" "}
       </Head>
       <Wrapper>
-        
+        <Card>
+            
+        </Card>
       </Wrapper>
     </Container>
   );
 };
 
 export default NewArrivals;
+
+const Wrapper = styled.div``;
 
 const Container = styled.div`
   margin-top: 100px;
