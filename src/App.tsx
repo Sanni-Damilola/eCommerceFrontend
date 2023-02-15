@@ -5,7 +5,7 @@ import Routes from "./Components/Routes/Routes";
 
 function App() {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <Header />
       <Routes />
       <Footer />

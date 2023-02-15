@@ -9,25 +9,27 @@ import logo from "../Images/logo.png";
 const Header = () => {
   return (
     <Container>
-      <Logo src={logo} />
-      <Middle>
-        <Span>home</Span>
-        <Span>about</Span>
-        <Span>service</Span>
-        <Span>prouct</Span>
-        <Span>search</Span>
-        <Span>explore</Span>
-      </Middle>
-      <Right>
-        <IconWrap>
-          <FiSearch />
-        </IconWrap>
-        <AddToCart>
-          <BsCartDash />
-          <Count>0</Count>
-        </AddToCart>
-        <Button>get started</Button>
-      </Right>
+      <Wrapper>
+        <Logo src={logo} />
+        <Middle>
+          <Span>home</Span>
+          <Span>about</Span>
+          <Span>service</Span>
+          <Span>prouct</Span>
+          <Span>search</Span>
+          <Span>explore</Span>
+        </Middle>
+        <Right>
+          <IconWrap>
+            <FiSearch />
+          </IconWrap>
+          <AddToCart>
+            <BsCartDash />
+            <Count>0</Count>
+          </AddToCart>
+          <Button>get started</Button>
+        </Right>
+      </Wrapper>
     </Container>
   );
 };

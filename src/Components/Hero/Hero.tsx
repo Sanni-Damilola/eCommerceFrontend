@@ -25,7 +25,7 @@ export default Hero;
 
 const Second = styled.img`
   object-fit: cover;
-  width: 650px;
+  width: 500px;
 `;
 
 const Container = styled.div`
@@ -59,7 +59,7 @@ const Button = styled.button`
 `;
 const Heading = styled.div`
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 10px;
 `;
 const Title = styled.div`
