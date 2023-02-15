@@ -1,6 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router";
 import Explore from "../Explore/Explore";
+import HomeScreen from "../Home/HomeScreen";
 import Men from "../Men/Men";
 import Sport from "../Sport/Sport";
 import Templates from "../Templates/Templates";
@@ -27,6 +28,10 @@ const Routes = () => {
     {
       path: "/explore",
       element: <Explore />,
+    },
+    {
+      path: "/homescreen",
+      element: <HomeScreen />,
     },
   ]);
 
