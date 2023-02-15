@@ -5,8 +5,18 @@ import shirt from "../Images/shirt (1).png";
 const Discover = () => {
   return (
     <Container>
-      <Head>Discover more. Good things are waiting for you</Head>
+      <Head>
+        Discover more. <Notice>Good things are waiting for you</Notice>{" "}
+      </Head>
       <Slider>
+        <CardWrapper>
+          <Details>
+            <Text1>Explore new arrivals</Text1>
+            <Text2>Shop the latest from top brands</Text2>
+            <Button>Show me all</Button>
+          </Details>
+          <Image src={shirt} />
+        </CardWrapper>
         <CardWrapper>
           <Details>
             <Text1>Explore new arrivals</Text1>
@@ -22,6 +32,13 @@ const Discover = () => {
 
 export default Discover;
 
+const Notice = styled.div`
+  color: #6b7280;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 6px;
+`;
+
 const Text1 = styled.p`
   color: #535e6c;
 `;
@@ -29,11 +46,16 @@ const Text2 = styled.div`
   color: black;
   font-weight: 500;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 `;
 const Button = styled.button`
   outline: 0;
   border: 0;
+
+  :hover {
+    background-color: lavenderblush;
+  }
   padding: 13px 19px;
   border-radius: 50px;
   background-color: white;
@@ -45,11 +67,13 @@ const Button = styled.button`
 `;
 
 const Slider = styled.div`
-  width: 90%;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
   overflow-x: scroll;
-  ::-webkit-scrollbar {
-    display: none;
-  }
+  height: 300px;
 `;
 const CardWrapper = styled.div`
   width: 500px;
@@ -59,6 +83,7 @@ const CardWrapper = styled.div`
   align-items: center;
   padding-bottom: 10px;
   background-color: #fefce8;
+  border-radius: 15px;
   cursor: pointer;
   transition: all 360ms;
   :hover {
@@ -82,7 +107,7 @@ const Head = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 const Container = styled.div`
