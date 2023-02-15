@@ -9,7 +9,17 @@ const NewArrivals = () => {
       </Head>
       <Wrapper>
         <Card>
-            
+          <Hold>
+            <Love></Love>
+            <Image />
+          </Hold>
+          <Title>
+            Ella Leather Tote
+          </Title>
+          <Category>
+            Cream pink
+          </Category>
+          
         </Card>
       </Wrapper>
     </Container>
