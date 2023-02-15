@@ -104,9 +104,11 @@ const Right = styled.div`
 `;
 const IconWrap = styled.div`
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 20px;
+  color: rgb(0, 0, 0, 0.6);
 `;
 const AddToCart = styled.div`
   font-size: 20px;
   margin-right: 10px;
+  color: rgb(0, 0, 0, 0.6);
 `;
