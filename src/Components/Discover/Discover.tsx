@@ -48,12 +48,7 @@ const Discover = () => {
 
 export default Discover;
 
-const Notice = styled.div`
-  color: #6b7280;
-  font-size: 25px;
-  font-weight: 600;
-  margin-left: 6px;
-`;
+
 
 const Text1 = styled.p`
   color: #535e6c;
@@ -123,6 +118,13 @@ const Head = styled.div`
   align-items: center;
   font-size: 25px;
   font-weight: 600;
+`;
+
+const Notice = styled.div`
+  color: #6b7280;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 6px;
 `;
 
 const Container = styled.div`
