@@ -13,13 +13,17 @@ const NewArrivals = () => {
             <Love></Love>
             <Image />
           </Hold>
-          <Title>
-            Ella Leather Tote
-          </Title>
-          <Category>
-            Cream pink
-          </Category>
-          
+          <Title>Ella Leather Tote</Title>
+          <Category>Cream pink</Category>
+          <Wrap>
+            <Amount></Amount>
+            <Reviews>
+              <Icon></Icon>
+              <Text>
+                "4.1 (50 reviews)"
+              </Text>
+            </Reviews>
+          </Wrap>
         </Card>
       </Wrapper>
     </Container>
