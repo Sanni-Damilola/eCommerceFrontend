@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import shirt from "../Images/shirt1.png";
 
 const Discover = () => {
   return (
@@ -11,7 +12,7 @@ const Discover = () => {
           <Sub>Shop from the latest stop brands</Sub>
           <Button>Show me all</Button>
         </First>
-        <Second />
+        <Second src={shirt} />
       </Card>
     </Container>
   );
@@ -25,12 +26,21 @@ const Card = styled.div`
   background-color: #fefcc8;
   padding: 20px;
   display: flex;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 `;
 const First = styled.div``;
-const Head = styled.div``;
+const Head = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+`;
 const Second = styled.img`
   object-fit: contain;
+  width: 50px;
+  height: 50px;
 `;
 const Title = styled.div``;
 const Sub = styled.div``;
