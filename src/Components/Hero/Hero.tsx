@@ -41,10 +41,12 @@ const Button = styled.button`
   width: 200px;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 const Heading = styled.div`
   font-size: 60px;
   font-weight: 900;
+  margin-bottom: 10px;
 `;
 const Title = styled.div`
   font-size: 25px;
