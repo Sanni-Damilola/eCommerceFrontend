@@ -36,7 +36,12 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  height: 40px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+`;
 const Heading = styled.div`
   font-size: 60px;
   font-weight: 900;
