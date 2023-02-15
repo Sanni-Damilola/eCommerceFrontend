@@ -8,7 +8,9 @@ const Hero = () => {
     <Container>
       <First>
         <Title>hero In this season, find the best 🔥</Title>
-        <Heading>Exclusive collection for everyone</Heading>
+        <Heading>
+          Exclusive collection <br /> for everyone
+        </Heading>
         <Button>
           Explore
           <RiSearch2Line />
@@ -28,7 +30,6 @@ const Second = styled.img`
 
 const Container = styled.div`
   width: 100%;
-  height: 500px;
   background-color: #e3ffe6;
   display: flex;
   justify-content: center;
@@ -37,10 +38,12 @@ const Container = styled.div`
 
 const Button = styled.button``;
 const Heading = styled.div`
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 900;
 `;
 const Title = styled.div`
   font-size: 25px;
 `;
-const First = styled.div``;
+const First = styled.div`
+  margin-right: 10px;
+`;
