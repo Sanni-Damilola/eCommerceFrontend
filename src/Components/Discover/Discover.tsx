@@ -25,6 +25,22 @@ const Discover = () => {
           </Details>
           <Image src={shirt} />
         </CardWrapper>
+        <CardWrapper>
+          <Details>
+            <Text1>Explore new arrivals</Text1>
+            <Text2>Shop the latest from top brands</Text2>
+            <Button>Show me all</Button>
+          </Details>
+          <Image src={shirt} />
+        </CardWrapper>
+        <CardWrapper>
+          <Details>
+            <Text1>Explore new arrivals</Text1>
+            <Text2>Shop the latest from top brands</Text2>
+            <Button>Show me all</Button>
+          </Details>
+          <Image src={shirt} />
+        </CardWrapper>
       </Slider>
     </Container>
   );
@@ -67,18 +83,17 @@ const Button = styled.button`
 `;
 
 const Slider = styled.div`
-  width: 98%;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: red;
-  overflow-x: scroll;
-  height: 300px;
+  justify-content: center;
+  flex-wrap: wrap;
 `;
 const CardWrapper = styled.div`
   width: 500px;
   height: 250px;
   display: flex;
+  margin: 20px;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
