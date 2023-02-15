@@ -50,6 +50,7 @@ const Slider = styled.div`
 `;
 const CardWrapper = styled.div`
   width: 500px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +66,9 @@ const Details = styled.div`
   flex-direction: column;
   justify-content: space-around;
   display: flex;
+  height: 100%;
   align-items: center;
+  background-color: red;
 `;
 const Image = styled.img`
   width: 300px;
