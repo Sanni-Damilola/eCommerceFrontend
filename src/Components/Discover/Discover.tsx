@@ -29,6 +29,8 @@ const Text2 = styled.div`
   color: black;
   font-weight: 500;
   font-size: 20px;
+  background-color: red;
+  text-align: center;
 `;
 const Button = styled.button`
   outline: 0;
@@ -50,7 +52,7 @@ const Slider = styled.div`
 `;
 const CardWrapper = styled.div`
   width: 500px;
-  height: auto;
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +70,6 @@ const Details = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
-  background-color: red;
 `;
 const Image = styled.img`
   width: 300px;
