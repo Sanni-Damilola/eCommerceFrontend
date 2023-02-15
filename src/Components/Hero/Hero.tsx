@@ -6,16 +6,16 @@ import img from "../Images/hero1.png";
 const Hero = () => {
   return (
     <Container>
-      <First>
-        {/* <Title>hero In this season, find the best 🔥</Title>
+      {/* <First>
+        <Title>hero In this season, find the best 🔥</Title>
         <Heading>
           Exclusive collection <br /> for everyone
         </Heading>
         <Button>
           Explore
           <RiSearch2Line />
-        </Button> */}
-      </First>
+        </Button>
+      </First> */}
       <Second src={img} />
     </Container>
   );
@@ -24,7 +24,7 @@ const Hero = () => {
 export default Hero;
 
 const Second = styled.img`
-  object-fit: contain;
+  object-fit: cover;
   width: 650px;
 `;
 

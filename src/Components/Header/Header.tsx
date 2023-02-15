@@ -9,7 +9,6 @@ import logo from "../Images/logo.png";
 const Header = () => {
   return (
     <Container>
-      {/* <Wrapper>
         <Logo src={logo} />
         <Middle>
           <Span>home</Span>
@@ -29,7 +28,6 @@ const Header = () => {
           </AddToCart>
           <Button>get started</Button>
         </Right>
-      </Wrapper> */}
     </Container>
   );
 };
