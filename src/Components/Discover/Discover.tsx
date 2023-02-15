@@ -11,12 +11,22 @@ const Discover = () => {
           <Sub>Shop from the latest stop brands</Sub>
           <Button>Show me all</Button>
         </First>
+        <Second />
       </Card>
     </Container>
   );
 };
 
 export default Discover;
+
+const Card = styled.div``;
+const First = styled.div``;
+const Head = styled.div``;
+const Second = styled.img`
+
+`;
+const Title = styled.div``;
+const Sub = styled.div``;
 
 const Button = styled.button`
   height: 50px;
