@@ -10,10 +10,10 @@ const Discover = () => {
         <CardWrapper>
           <Details>
             <Text1>Explore new arrivals</Text1>
-            <Text1>Shop the latest from top brands</Text1>
+            <Text2>Shop the latest from top brands</Text2>
             <Button>Show me all</Button>
           </Details>
-          <Image />
+          <Image src={shirt} />
         </CardWrapper>
       </Slider>
     </Container>
@@ -23,15 +23,54 @@ const Discover = () => {
 export default Discover;
 
 const Text1 = styled.p`
-
+  color: #535e6c;
 `;
-const Text2 = styled.span``;
-const Button = styled.button``;
+const Text2 = styled.div`
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+`;
+const Button = styled.button`
+  outline: 0;
+  border: 0;
+  padding: 13px 19px;
+  border-radius: 50px;
+  background-color: white;
+  font-weight: 400;
+  color: #535e6c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+`;
 
-const Slider = styled.div``;
-const CardWrapper = styled.div``;
-const Details = styled.div``;
-const Image = styled.img``;
+const Slider = styled.div`
+  width: 90%;
+  overflow-x: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`;
+const CardWrapper = styled.div`
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: #fefce8;
+  cursor: pointer;
+  transition: all 360ms;
+  :hover {
+    background-color: rgb(0, 0, 0, 0.1);
+  }
+`;
+const Details = styled.div`
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+`;
+const Image = styled.img`
+  width: 300px;
+  object-fit: cover;
+`;
 
 const Head = styled.div`
   display: flex;
@@ -44,4 +83,7 @@ const Head = styled.div`
 
 const Container = styled.div`
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
