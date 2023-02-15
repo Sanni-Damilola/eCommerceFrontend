@@ -25,6 +25,7 @@ const Header = () => {
           </IconWrap>
           <AddToCart>
             <BsCartDash />
+            <Count>0</Count>
           </AddToCart>
           <Button>get started</Button>
         </Right>
@@ -34,6 +35,21 @@ const Header = () => {
 };
 
 export default Header;
+
+const Count = styled.div`
+  background-color: #0ea5e9;
+  color: white;
+  position: absolute;
+  top: -5px;
+  font-size: 9px;
+  right: -3px;
+  width: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13px;
+  border-radius: 50%;
+`;
 
 const Button = styled.div`
   width: 150px;
@@ -105,9 +121,12 @@ const Right = styled.div`
 const IconWrap = styled.div`
   margin-right: 20px;
   color: rgb(0, 0, 0, 0.6);
+  cursor: pointer;
 `;
 const AddToCart = styled.div`
   font-size: 20px;
-  margin-right: 10px;
+  margin-right: 40px;
   color: rgb(0, 0, 0, 0.6);
+  position: relative;
+  cursor: pointer;
 `;
