@@ -26,12 +26,15 @@ const Card = styled.div`
   background-color: #fefcc8;
   padding: 20px;
   display: flex;
+  margin-left: 25px;
+  border-radius: 7px;
   justify-content: center;
   align-items: center;
 `;
 const First = styled.div``;
 const Head = styled.div`
   display: flex;
+  margin-bottom: 40px;
   justify-content: center;
   align-items: center;
   font-size: 25px;
@@ -39,8 +42,8 @@ const Head = styled.div`
 `;
 const Second = styled.img`
   object-fit: contain;
-  width: 50px;
-  height: 50px;
+  width: 300px;
+  height: 300px;
 `;
 const Title = styled.div``;
 const Sub = styled.div``;
