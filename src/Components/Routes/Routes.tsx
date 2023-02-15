@@ -1,6 +1,5 @@
 import React from "react";
 import { useRoutes } from "react-router";
-import Explore from "../Explore/Explore";
 import HomeScreen from "../Home/HomeScreen";
 
 const Routes = () => {

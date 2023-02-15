@@ -6,7 +6,7 @@ import img from "../Images/hero1.png";
 const Hero = () => {
   return (
     <Container>
-      {/* <First>
+      <First>
         <Title>hero In this season, find the best 🔥</Title>
         <Heading>
           Exclusive collection <br /> for everyone
@@ -15,7 +15,7 @@ const Hero = () => {
           Explore
           <RiSearch2Line />
         </Button>
-      </First> */}
+      </First>
       <Second src={img} />
     </Container>
   );
