@@ -118,6 +118,7 @@ const Container = styled.div`
 
 const Disco = styled.div`
   width: 100%;
+  margin-top: 400px;
   height: 500px;
   display: flex;
   justify-content: center;
