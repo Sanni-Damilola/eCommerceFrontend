@@ -1,7 +1,6 @@
 import { write } from "fs";
 import React from "react";
 import styled from "styled-components";
-import green from "../Assets/green.png";
 import { AiFillStar } from "react-icons/ai";
 
 const Arrivals = () => {
