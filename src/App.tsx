@@ -6,11 +6,9 @@ import Header from "./Components/header/header";
 function App() {
   return (
     <div>
-
-      <Header />   
+      <Header />
       <AllRoute />
       <Footer />
-
     </div>
   );
 }
