@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const NewArrivals = () => {
   return (
@@ -10,7 +11,9 @@ const NewArrivals = () => {
       <Wrapper>
         <Card>
           <Hold>
-            <Love></Love>
+            <Love>
+              <AiOutlineHeart />
+            </Love>
             <Image />
           </Hold>
           <Title>Ella Leather Tote</Title>
