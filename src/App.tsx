@@ -1,14 +1,16 @@
 import React from "react";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import Routes from "./Components/Routes/Routes";
+import { AllRoute } from "./Components/allRoute/allRoutes";
+import Footer from "./Components/footer/footer";
+import Header from "./Components/header/header";
 
 function App() {
   return (
-    <div style={{ overflow: "hidden" }}>
-      <Header />
-      <Routes />
+    <div>
+
+      <Header />   
+      <AllRoute />
       <Footer />
+
     </div>
   );
 }
