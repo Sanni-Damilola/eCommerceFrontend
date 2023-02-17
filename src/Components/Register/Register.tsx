@@ -1,26 +1,25 @@
-import React from 'react'
-import styled from 'styled-components';
-import * as yup from "yup"
-import  {} from ""
+import React from "react";
+import styled from "styled-components";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 const Register = () => {
   return (
     <Container>
       <Card>
         <h3>Register</h3>
-        <input placeholder='Enter your name' />
+        <input placeholder="Enter your name" />
         <p></p>
-        <input placeholder='Enter your email' />
+        <input placeholder="Enter your email" />
         <p></p>
-        <input placeholder='Enter your password' />
+        <input placeholder="Enter your password" />
         <p></p>
       </Card>
     </Container>
-  )
-}
+  );
+};
 
-export default Register
-
+export default Register;
 
 const MainButton = styled.button`
   height: 45px;
