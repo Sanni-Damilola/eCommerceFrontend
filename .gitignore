@@ -7,10 +7,9 @@
 
 # testing
 /coverage
-/Api
 # production
 /build
-
+Api
 # misc
 .DS_Store
 .env.local
