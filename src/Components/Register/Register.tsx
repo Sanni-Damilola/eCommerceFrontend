@@ -27,10 +27,10 @@ const Register = () => {
     <Container>
       <Card>
         <h3>Register</h3>
-        <input placeholder="Enter your name" />
-        <p></p>
-        <input placeholder="Enter your email" />
-        <p></p>
+        <input {...register("name")} placeholder="Enter your name" />
+        <p>{errors?.name && errors?.name.message}</p>
+        <input {...register("email")} placeholder="Enter your email" />
+        <p>{errors?.email && errors?.email.message}</p>
         <input placeholder="Enter your password" />
         <p></p>
       </Card>
