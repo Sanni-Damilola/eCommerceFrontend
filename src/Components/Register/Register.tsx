@@ -7,6 +7,11 @@ const Register = () => {
       <Card>
         <h3>Register</h3>
         <input placeholder='Enter your name' />
+        <p></p>
+        <input placeholder='Enter your email' />
+        <p></p>
+        <input placeholder='Enter your password' />
+        <p></p>
       </Card>
     </Container>
   )
