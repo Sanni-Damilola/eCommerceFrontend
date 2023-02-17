@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { storeDispatch } from "../Global/Store/Store";
 import { useMutation } from "@tanstack/react-query";
 import { postUser } from "../../Api/Api";
+import { loginUser } from "../Global/ReduxState/ReduxState";
 
 const Register = () => {
   const schema = yup
@@ -26,21 +27,20 @@ const Register = () => {
     resolver: yupResolver(schema),
   });
 
-  const submit = handleSubmit((data) => {
-    console.log(data);
-    reset();
-  });
-
   // post data
   const dispath = storeDispatch();
   const postData = useMutation({
     mutationKey: ["postUser"],
     mutationFn: postUser,
     onSuccess: (data) => {
-      postData.mutate(data)
+      postData.mutate(data);
     },
   });
 
+  const submit = handleSubmit((data) => {
+    dispath(loginUser(data));
+    reset();
+  });
   return (
     <Container>
       <Card onSubmit={submit}>
