@@ -31,8 +31,8 @@ const Register = () => {
         <p>{errors?.name && errors?.name.message}</p>
         <input {...register("email")} placeholder="Enter your email" />
         <p>{errors?.email && errors?.email.message}</p>
-        <input placeholder="Enter your password" />
-        <p></p>
+        <input {...register("password")} placeholder="Enter your password" />
+        <p>{errors?.password && errors?.password.message}</p>
       </Card>
     </Container>
   );
