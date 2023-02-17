@@ -30,7 +30,7 @@ const Register = () => {
   });
 
   // store
-  // const dispath =
+  const dispath = storeDispatch()
 
   return (
     <Container>
