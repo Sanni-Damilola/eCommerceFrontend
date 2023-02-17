@@ -23,9 +23,14 @@ const Register = () => {
     resolver: yupResolver(schema),
   });
 
+  const submit = handleSubmit((data) => {
+    console.log(data);
+    reset();
+  });
+
   return (
     <Container>
-      <Card onSubmit={handleSubmit}>
+      <Card onSubmit={submit}>
         <h3>Register</h3>
         <input {...register("name")} placeholder="Enter your name" />
         <p>{errors?.name && errors?.name.message}</p>
