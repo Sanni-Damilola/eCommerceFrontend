@@ -5,6 +5,14 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
 const Register = () => {
+  const schema = yup
+    .object({
+      name: yup.string().required(),
+      email: yup.string().required(),
+      password: yup.string().min(9).required(),
+    })
+    .required();
+
   return (
     <Container>
       <Card>
