@@ -29,8 +29,10 @@ const Register = () => {
     reset();
   });
 
-  // store
+  // post data
   const dispath = storeDispatch()
+
+
 
   return (
     <Container>
