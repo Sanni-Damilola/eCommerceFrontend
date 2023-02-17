@@ -33,14 +33,14 @@ const Register = () => {
     mutationKey: ["postUser"],
     mutationFn: postUser,
     onSuccess: (data) => {
-      postData.mutate(data.data);
+      postData.mutate(data);
     },
   });
-
   const submit = handleSubmit((data) => {
     dispath(loginUser(data));
     reset();
   });
+
   return (
     <Container>
       <Card onSubmit={submit}>
