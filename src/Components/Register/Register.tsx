@@ -6,7 +6,7 @@ const Register = () => {
     <Container>
       <Card>
         <h3>Register</h3>
-        <input placeholder='' />
+        <input placeholder='Enter your name' />
       </Card>
     </Container>
   )
