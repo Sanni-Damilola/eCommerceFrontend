@@ -40,7 +40,7 @@ const Register = () => {
 
   const submit = handleSubmit((data) => {
     postData.mutate(data);
-    // reset();
+    reset();
   });
 
   return (
