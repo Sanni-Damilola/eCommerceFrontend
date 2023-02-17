@@ -25,7 +25,7 @@ const Register = () => {
 
   return (
     <Container>
-      <Card>
+      <Card onSubmit={handleSubmit}>
         <h3>Register</h3>
         <input {...register("name")} placeholder="Enter your name" />
         <p>{errors?.name && errors?.name.message}</p>
@@ -33,6 +33,7 @@ const Register = () => {
         <p>{errors?.email && errors?.email.message}</p>
         <input {...register("password")} placeholder="Enter your password" />
         <p>{errors?.password && errors?.password.message}</p>
+        <MainButton type="submit">Register</MainButton>
       </Card>
     </Container>
   );
