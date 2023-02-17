@@ -3,7 +3,7 @@ import styled from "styled-components";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import {} from "../Global/Store/Store"
+import { storeDispatch } from "../Global/Store/Store";
 
 const Register = () => {
   const schema = yup
@@ -29,9 +29,8 @@ const Register = () => {
     reset();
   });
 
-
   // store
-  // const dispath = 
+  // const dispath =
 
   return (
     <Container>
