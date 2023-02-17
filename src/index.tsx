@@ -8,6 +8,9 @@ import { Provider } from "react-redux/es/exports";
 import { store } from "./Components/Global/Store/Store";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const quearyClient = new QueryClient();
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
