@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
+import * as yup from "yup"
+import  {} from ""
 
 const Register = () => {
   return (
