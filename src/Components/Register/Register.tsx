@@ -37,6 +37,7 @@ const Register = () => {
     mutationKey: ["postUser"],
     mutationFn: postUser,
     onSuccess: (data) => {
+      postData.mutate(data)
     },
   });
 
