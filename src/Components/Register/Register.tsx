@@ -4,6 +4,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { storeDispatch } from "../Global/Store/Store";
+import { useMutation } from "@tanstack/react-query";
+import { postUser } from "../../../Api/Api";
 
 const Register = () => {
   const schema = yup
@@ -30,9 +32,14 @@ const Register = () => {
   });
 
   // post data
-  const dispath = storeDispatch()
-
-
+  const dispath = storeDispatch();
+  const postData = useMutation({
+    mutationKey: ["postUser"],
+    mutationFn: postUser,
+    onSuccess: (data) => {
+      console.log(data);
+    },
+  });
 
   return (
     <Container>
