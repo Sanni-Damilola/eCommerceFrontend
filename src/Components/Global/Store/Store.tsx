@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { useDispatch } from "react-redux/es/hooks/useDispatch";
 import myReducer from "../ReduxState/ReduxState";
 
 export const store = configureStore({
@@ -6,3 +7,5 @@ export const store = configureStore({
     myReducer,
   },
 });
+
+export const storeDispatch: () => typeof store.dispatch = useDispatch;
