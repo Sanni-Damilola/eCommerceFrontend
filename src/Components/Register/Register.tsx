@@ -76,7 +76,7 @@ const MainButton = styled.button`
   margin-top: 20px;
 `;
 
-const Card = styled.form<{ outline: string }>`
+const Card = styled.form<{ outlineValue: string }>`
   padding: 20px;
   min-height: 300px;
   width: 400px;
@@ -85,7 +85,7 @@ const Card = styled.form<{ outline: string }>`
     height: 35px;
     width: 95%;
     border: 1px solid #f1f1f1;
-    outline: ${{ outline }(outline ? "" : "")} solid red;
+    outline: ${({ outlineValue }) => (outlineValue ? "" : "")} solid red;
   }
   p {
     font-size: 11px;
