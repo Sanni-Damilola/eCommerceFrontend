@@ -89,7 +89,7 @@ const Card = styled.form`
   }
 `;
 
-const Input = styled.input<{ outLine }>`
+const Input = styled.input<{ outLine: string }>`
   height: 35px;
   width: 95%;
   border: 1px solid #f1f1f1;
