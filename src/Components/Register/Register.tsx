@@ -85,7 +85,7 @@ const Card = styled.form`
     height: 35px;
     width: 95%;
     border: 1px solid #f1f1f1;
-    outline: 4px solid green;
+    outline: none;
   }
   p {
     font-size: 11px;
