@@ -84,12 +84,9 @@ const Card = styled.form`
   input {
     height: 35px;
     width: 95%;
-    /* margin: 10px; */
     border: 1px solid #f1f1f1;
     outline: border;
-    /* :focus {
-			border-color: red;
-		} */
+    
   }
   p {
     font-size: 11px;
