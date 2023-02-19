@@ -86,14 +86,12 @@ const Card = styled.form`
     width: 95%;
     border: 1px solid #f1f1f1;
     outline: border;
-    
   }
   p {
     font-size: 11px;
     margin-bottom: 5px;
     padding: 0;
     color: red;
-    /* min-height: 10px; */
   }
 `;
 
