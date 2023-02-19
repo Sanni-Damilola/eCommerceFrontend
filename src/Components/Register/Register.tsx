@@ -46,16 +46,20 @@ const Register = () => {
     <Container>
       <Card onSubmit={submit}>
         <h3>Register</h3>
-        <Input outLine="" {...register("name")} placeholder="Enter your name" />
+        <Input
+          outLine={errors?.name ? "value" : ""}
+          {...register("name")}
+          placeholder="Enter your name"
+        />
         <p>{errors?.name && errors?.name.message}</p>
         <Input
-          outLine=""
+          outLine={errors?.email ? "value" : ""}
           {...register("email")}
           placeholder="Enter your email"
         />
         <p>{errors?.email && errors?.email.message}</p>
         <Input
-          outLine=""
+          outLine={errors?.password ? "value" : ""}
           {...register("password")}
           placeholder="Enter your password"
         />
@@ -101,7 +105,7 @@ const Input = styled.input<{ outLine: string }>`
   height: 35px;
   width: 95%;
   border: 1px solid #f1f1f1;
-  outline: ${({ outLine }) => (outLine ? "" : "")} solid red;
+  outline: ${({ outLine }) => (outLine ? "1px" : "0px")} solid red;
 `;
 
 const Container = styled.div`
