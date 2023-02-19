@@ -81,12 +81,6 @@ const Card = styled.form<{ outlineValue: string }>`
   min-height: 300px;
   width: 400px;
   border: 1px solid #f1f1f1;
-  input {
-    height: 35px;
-    width: 95%;
-    border: 1px solid #f1f1f1;
-    outline: ${({ outlineValue }) => (outlineValue ? "" : "")} solid red;
-  }
   p {
     font-size: 11px;
     margin-bottom: 5px;
