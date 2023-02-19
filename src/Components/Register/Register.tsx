@@ -76,7 +76,7 @@ const MainButton = styled.button`
   margin-top: 20px;
 `;
 
-const Card = styled.form<{ outlineValue: string }>`
+const Card = styled.form`
   padding: 20px;
   min-height: 300px;
   width: 400px;
@@ -87,6 +87,13 @@ const Card = styled.form<{ outlineValue: string }>`
     padding: 0;
     color: red;
   }
+`;
+
+const Input = styled.input<{ outLine }>`
+  height: 35px;
+  width: 95%;
+  border: 1px solid #f1f1f1;
+  outline: ${({ outLine }) => (outLine ? "" : "")} solid red;
 `;
 
 const Container = styled.div`
