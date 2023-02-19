@@ -46,11 +46,19 @@ const Register = () => {
     <Container>
       <Card onSubmit={submit}>
         <h3>Register</h3>
-        <Input  {...register("name")} placeholder="Enter your name" />
+        <Input outLine="" {...register("name")} placeholder="Enter your name" />
         <p>{errors?.name && errors?.name.message}</p>
-        <Input  {...register("email")} placeholder="Enter your email" />
+        <Input
+          outLine=""
+          {...register("email")}
+          placeholder="Enter your email"
+        />
         <p>{errors?.email && errors?.email.message}</p>
-        <Input  {...register("password")} placeholder="Enter your password" />
+        <Input
+          outLine=""
+          {...register("password")}
+          placeholder="Enter your password"
+        />
         <p>{errors?.password && errors?.password.message}</p>
         <MainButton type="submit">Register</MainButton>
       </Card>
