@@ -8,7 +8,7 @@ interface userData {
 }
 
 const initialState = {
-  currentUser: {} || null,
+  currentUser: {} as userData | null,
 };
 
 const ReduxState = createSlice({
@@ -17,6 +17,9 @@ const ReduxState = createSlice({
   reducers: {
     loginUser: (state, { payload }: PayloadAction<userData>) => {
       state.currentUser = payload;
+    },
+    logOut: (state) => {
+      state.currentUser = null;
     },
   },
 });

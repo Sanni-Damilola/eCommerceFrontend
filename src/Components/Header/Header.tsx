@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AiOutlineSearch } from "react-icons/ai";
 import { RxPerson } from "react-icons/rx";
 import { BsCart } from "react-icons/bs";
+import { useAppSelector } from "../Global/Store/Store";
 // import { RiArrowDownSLine } from "react-icons/ri"
 
 const Header = () => {
