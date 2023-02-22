@@ -7,8 +7,20 @@ interface userData {
   password: string;
 }
 
+interface cartData {
+  title: string;
+  desc: string;
+  price: string;
+  category: string;
+  _id: string;
+  cartQuantiy: number;
+}
+
 const initialState = {
   currentUser: {} as userData | null,
+  cart: [] as Array<cartData>,
+  totalPrice: 0,
+  totalQuantity: 0,
 };
 
 const ReduxState = createSlice({
