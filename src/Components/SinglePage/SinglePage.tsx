@@ -16,7 +16,7 @@ const SinglePage = () => {
 
   // const readSingleItem = readCart.filter((el) => el._id === id);
 
-  console.log(readSingleItem);
+  // console.log(readSingleItem);
 
   const getData = useQuery({
     queryKey: ["products", id],
