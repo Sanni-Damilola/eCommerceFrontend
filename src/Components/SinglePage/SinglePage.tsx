@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import pic from "../Assets/1.png";
 import { storeDispatch, useAppSelector } from "../Global/Store/Store";
-import { addToCart } from "../Global/ReduxState";
+// import { addToCart } from "../Global/ReduxState";
 import { getOneUser } from "../../Api/Api";
 
 const SinglePage = () => {
@@ -14,7 +14,7 @@ const SinglePage = () => {
 
   const readCart = useAppSelector((state) => state.myReducer.currentUser);
 
-  const readSingleItem = readCart.filter((el) => el._id === id);
+  // const readSingleItem = readCart.filter((el) => el._id === id);
 
   console.log(readSingleItem);
 
