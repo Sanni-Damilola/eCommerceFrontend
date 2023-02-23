@@ -2,8 +2,9 @@ import React from "react";
 import Categories from "../Categories/Categories";
 import Discover from "../Discover/Discover";
 import Hero from "../Hero/Hero";
-import Prod from "../Prod/Prod";
+import NewArrival from "../NewArrival/NewArrival";
 import Ship from "../Ship/Ship";
+
 const HomeScreen = () => {
   return (
     <div
@@ -13,7 +14,7 @@ const HomeScreen = () => {
     >
       <Hero />
       <Discover />
-      <Prod />
+      <NewArrival />
       <Ship />
       <Categories />
     </div>

@@ -2,6 +2,9 @@ import React from "react";
 import { useRoutes } from "react-router-dom";
 import CartPage from "../Cart/CartPage";
 import HomeScreen from "../Home/HomeScreen";
+import Product from "../Product/Product";
+import Register from "../Register/Register";
+import SinglePage from "../SinglePage/SinglePage";
 
 const AllRoutes = () => {
   let element = useRoutes([
@@ -19,7 +22,7 @@ const AllRoutes = () => {
     },
     {
       path: "/product",
-      element: <Products />,
+      element: <Product />,
     },
     {
       path: "/register",
