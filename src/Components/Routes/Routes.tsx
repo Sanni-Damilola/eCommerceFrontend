@@ -1,10 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import CartPage from "../CartPage/CartPage";
-import Products from "../Products/Products";
-import Register from "../Register/Register";
-import SinglePage from "../SinglePage/SinglePage";
-import HomeScreen from "./HomeScreen";
+import CartPage from "../Cart/CartPage";
+import HomeScreen from "../Home/HomeScreen";
 
 const AllRoutes = () => {
   let element = useRoutes([
