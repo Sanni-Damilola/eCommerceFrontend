@@ -66,6 +66,9 @@ const SinglePage = () => {
             </But>
           </ButtonHold>
           <MainButton
+            disabled={
+              readSingleItem[0]?.cartQuantity === getData?.data?.data.quantity
+            }
             onClick={() => {
               dispatch(addToCart(getData?.data?.data));
             }}
