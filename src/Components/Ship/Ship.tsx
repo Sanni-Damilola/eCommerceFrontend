@@ -1,31 +1,30 @@
 import React from "react";
 import styled from "styled-components";
-import pic from "../Assets/dis.png";
 
 const Ship = () => {
   return (
     <Container>
       <Holder>
         <Card>
-          <Image src={pic} />
+          <Image src="" />
           <Step>Step1</Step>
           <Title>Filter & Discover</Title>
           <Desc>Smart filtering and suggestions make it easy to find</Desc>
         </Card>
         <Card>
-          <Image src={pic} />
+          <Image src="" />
           <Step>Step1</Step>
           <Title>Filter & Discover</Title>
           <Desc>Smart filtering and suggestions make it easy to find</Desc>
         </Card>
         <Card>
-          <Image src={pic} />
+          <Image src="" />
           <Step>Step1</Step>
           <Title>Filter & Discover</Title>
           <Desc>Smart filtering and suggestions make it easy to find</Desc>
         </Card>
         <Card>
-          <Image src={pic} />
+          <Image src="" />
           <Step>Step1</Step>
           <Title>Filter & Discover</Title>
           <Desc>Smart filtering and suggestions make it easy to find</Desc>
