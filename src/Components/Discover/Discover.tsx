@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import shirt1 from "../Images/shirt.png"
-
+import bag from "../Images/bag.png";
+import cap from "../Images/cap.png";
+import short from "../Images/short.png";
+import shirt2 from "../Images/shirt.png";
+import shirt from "../Images/shirt.png";
 
 const Discover = () => {
   return (
@@ -17,7 +20,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src={shirt1} />
+          <Second src={cap} />
         </Card>
         <Card bg="#FEF2F2">
           <First>
@@ -25,7 +28,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src={shirt1} />
+          <Second src={shirt2} />
         </Card>
         <Card bg="#EFF6FF">
           <First>
@@ -33,7 +36,23 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src={shirt1} />
+          <Second src={shirt} />
+        </Card>
+        <Card bg="#EFF6FF">
+          <First>
+            <Title>Explore new Arrivals</Title>
+            <Sub>Shop from the latest top brands</Sub>
+            <Button>Show me all</Button>
+          </First>
+          <Second src={short} />
+        </Card>
+        <Card bg="#EFF6FF">
+          <First>
+            <Title>Explore new Arrivals</Title>
+            <Sub>Shop from the latest top brands</Sub>
+            <Button>Show me all</Button>
+          </First>
+          <Second src={bag} />
         </Card>
       </Holder>
     </Container>
@@ -44,12 +63,13 @@ export default Discover;
 const Holder = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   align-items: center;
 `;
 
 const Second = styled.img`
   object-fit: contain;
-  width: 150px;
+  height: 200px;
 `;
 
 //
@@ -60,14 +80,14 @@ const Head = styled.div`
   font-weight: 600;
 `;
 const Card = styled.div<{ bg: string }>`
-  width: 400px;
-  height: 170px;
+  width: 350px;
   background-color: ${(props) => props.bg};
   display: flex;
   overflow: hidden;
   padding: 20px;
   margin: 10px;
   border-radius: 5px;
+  cursor: pointer;
 `;
 const First = styled.div``;
 const Title = styled.div`
