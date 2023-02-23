@@ -8,7 +8,7 @@ import { useMutation } from "@tanstack/react-query";
 import { UseAppDispach } from "../Global/Store";
 import { loginUser } from "../Global/ReduxState";
 import { postUser } from "../../Api/Api";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const dispatch = UseAppDispach();
@@ -40,9 +40,10 @@ const Register = () => {
     },
   });
 
-  const navigate =
+  const navigate = useNavigate();
   const Submit = handleSubmit((data) => {
     post.mutate(data);
+    navigate("/");
     reset();
   });
 
