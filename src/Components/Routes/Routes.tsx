@@ -6,7 +6,7 @@ import Product from "../Product/Product";
 import Register from "../Register/Register";
 import SinglePage from "../SinglePage/SinglePage";
 
-const AllRoutes = () => {
+const Routes = () => {
   let element = useRoutes([
     {
       path: "/",
@@ -32,4 +32,4 @@ const AllRoutes = () => {
   return element;
 };
 
-export default AllRoutes;
+export default Routes;
