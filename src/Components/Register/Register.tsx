@@ -14,7 +14,7 @@ const Register = () => {
   const dispatch = UseAppDispach();
   const schema = yup
     .object({
-      name: yup.string().required("field must be required"),
+      name: yup.string().required(),
       email: yup.string().email().required(),
       password: yup.string().min(9).required(),
     })
@@ -67,17 +67,12 @@ const Register = () => {
           placeholder="Enter your password"
         />
         <p>{errors?.password && errors?.password?.message}</p>
-        {errors?.name &&
-        errors?.name?.message &&
-        errors?.email &&
-        errors?.email?.message &&
-        errors?.password &&
-        errors?.password?.message ? (
+        {errors?.name?.message && errors?.e.message ? (
+          <MainButton type="submit">Register</MainButton>
+        ) : (
           <Link style={{ textDecoration: "none" }} to={"/"}>
             <MainButton type="submit">Register</MainButton>
           </Link>
-        ) : (
-          <MainButton type="submit">Register</MainButton>
         )}
       </Card>
     </Container>
