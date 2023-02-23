@@ -6,6 +6,7 @@ import manhattan from "../Images/manhattan.png";
 import umbrella from "../Images/umbrella.png";
 import redbag from "../Images/redbag.png";
 import cap from "../Images/cap.png";
+import { Link } from "react-router-dom";
 
 const NewArrival = () => {
   return (
@@ -15,6 +16,8 @@ const NewArrival = () => {
         <span style={{ color: "gray" }}>REY backpacks & bags</span>
       </Head>
       <Holder>
+        <Link to={"/"} >
+        
         <Card>
           <MainImage>
             <ImageHold>
@@ -36,6 +39,7 @@ const NewArrival = () => {
             </PriceHold>
           </MainImage>
         </Card>
+        </Link>
         <Card>
           <MainImage>
             <ImageHold>
