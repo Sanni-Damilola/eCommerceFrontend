@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import log from "./Assets/logo.png";
+import logo from "../Images/headerLogo.png";
 import { NavLink } from "react-router-dom";
 import { UseAppDispach, useAppSelector } from "../Global/Store";
 import { logoutUser } from "../Global/ReduxState";
@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <Container>
-      <Logo src={log} />
+      <Logo src={logo} />
       <NavHold>
         <NavLink to="/">
           <Nav>Home</Nav>
