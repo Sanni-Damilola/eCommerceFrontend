@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { RiSearch2Line } from "react-icons/ri";
+import hero  from "../Images/hero.png"
 const Hero = () => {
   return (
     <Container>
@@ -14,7 +15,7 @@ const Hero = () => {
           Explore now <RiSearch2Line />
         </Button>
       </First>
-      <Second src="" />
+      <Second src={hero} />
     </Container>
   );
 };

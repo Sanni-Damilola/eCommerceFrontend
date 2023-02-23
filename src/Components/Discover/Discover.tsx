@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import shirt1 from "../Images/shirt.png"
 
 
 const Discover = () => {
@@ -16,7 +17,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src="" />
+          <Second src={shirt1} />
         </Card>
         <Card bg="#FEF2F2">
           <First>
@@ -24,7 +25,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src="" />
+          <Second src={shirt1} />
         </Card>
         <Card bg="#EFF6FF">
           <First>
@@ -32,7 +33,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src="" />
+          <Second src={shirt1} />
         </Card>
       </Holder>
     </Container>
