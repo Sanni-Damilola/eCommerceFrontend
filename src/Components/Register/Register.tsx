@@ -8,6 +8,7 @@ import { useMutation } from "@tanstack/react-query";
 import { UseAppDispach } from "../Global/Store";
 import { loginUser } from "../Global/ReduxState";
 import { postUser } from "../../Api/Api";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const dispatch = UseAppDispach();
@@ -49,18 +50,26 @@ const Register = () => {
       <Card onSubmit={Submit}>
         <h3>Register</h3>
         <Input
-        outLineValue={errors?.name ? "value" : ""}
-        {...register("name")} placeholder="Enter your name" />
+          outLineValue={errors?.name ? "value" : ""}
+          {...register("name")}
+          placeholder="Enter your name"
+        />
         <p>{errors?.name && errors?.name?.message}</p>
         <Input
-        outLineValue={errors?.email ? "value" : ""}
-        {...register("email")} placeholder="Enter your email" />
+          outLineValue={errors?.email ? "value" : ""}
+          {...register("email")}
+          placeholder="Enter your email"
+        />
         <p>{errors?.email && errors?.email?.message}</p>
         <Input
-        outLineValue={errors?.password ? "value" : ""}
-        {...register("password")} placeholder="Enter your password" />
+          outLineValue={errors?.password ? "value" : ""}
+          {...register("password")}
+          placeholder="Enter your password"
+        />
         <p>{errors?.password && errors?.password?.message}</p>
-        <MainButton type="submit">Register</MainButton>
+        <Link style={{textDecoration: "none"}} to={"/"}>
+          <MainButton type="submit">Register</MainButton>
+        </Link>
       </Card>
     </Container>
   );
