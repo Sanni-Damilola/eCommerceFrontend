@@ -3,7 +3,7 @@ import styled from "styled-components";
 import bag from "../Images/bag.png";
 import cap from "../Images/cap.png";
 import short from "../Images/short.png";
-import shirt2 from "../Images/shirt.png";
+import shirt2 from "../Images/shirt2.png";
 import shirt from "../Images/shirt.png";
 
 const Discover = () => {
