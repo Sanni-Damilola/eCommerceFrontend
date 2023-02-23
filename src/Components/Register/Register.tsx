@@ -67,9 +67,13 @@ const Register = () => {
           placeholder="Enter your password"
         />
         <p>{errors?.password && errors?.password?.message}</p>
-        <Link style={{textDecoration: "none"}} to={"/"}>
+        {errors?.email && errors?.name && errors?.password ? (
+          <Link style={{ textDecoration: "none" }} to={"/"}>
+            <MainButton type="submit">Register</MainButton>
+          </Link>
+        ) : (
           <MainButton type="submit">Register</MainButton>
-        </Link>
+        )}
       </Card>
     </Container>
   );
