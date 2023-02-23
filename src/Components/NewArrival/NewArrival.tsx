@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
-import shoe from "../Images/shoe.png";
+import jumpRope from "../Images/jumpRope.png";
+import manhattan from "../Images/manhattan.png";
+import leg from "../Images/leg.png";
 
 const NewArrival = () => {
   return (
@@ -14,7 +16,7 @@ const NewArrival = () => {
         <Card>
           <MainImage>
             <ImageHold>
-              <Image src={shoe} />
+              <Image src={jumpRope} />
             </ImageHold>
             <Title>Manhattan Toy WRT</Title>
             <Desc>New design 2023</Desc>
@@ -35,7 +37,7 @@ const NewArrival = () => {
         <Card>
           <MainImage>
             <ImageHold>
-              <Image />
+              <Image src={manhattan} />
             </ImageHold>
             <Title>Manhattan Toy WRT</Title>
             <Desc>New design 2023</Desc>
@@ -56,7 +58,7 @@ const NewArrival = () => {
         <Card>
           <MainImage>
             <ImageHold>
-              <Image />
+              <Image src={leg} />
             </ImageHold>
             <Title>Manhattan Toy WRT</Title>
             <Desc>New design 2023</Desc>
@@ -151,6 +153,7 @@ const Price = styled.div`
   width: 100px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
   border: 1px solid green;
   font-weight: 600;
@@ -162,6 +165,7 @@ const Ratting = styled.div`
   color: gray;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 const MainImage = styled.div``;
 const Image = styled.img``;
