@@ -15,7 +15,6 @@ const HomeScreen = () => {
     >
       <Hero />
       <Discover />
-      <SinglePage />
       <NewArrival />
       <Ship />
       <Categories />
