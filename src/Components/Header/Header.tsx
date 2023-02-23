@@ -22,12 +22,15 @@ const Header = () => {
     <Container>
       <Logo src={logo} />
       <NavHold>
-        <NavLink to="/">
+        <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
           <Nav>Home</Nav>
         </NavLink>
         <Nav>About</Nav>
         <Nav>Services</Nav>
-        <NavLink to="/product">
+        <NavLink
+          style={{ textDecoration: "none", color: "black" }}
+          to="/product"
+        >
           <Nav>Products</Nav>
         </NavLink>
       </NavHold>
