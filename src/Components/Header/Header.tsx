@@ -20,7 +20,9 @@ const Header = () => {
 
   return (
     <Container>
-      <Logo src={logo} />
+      <Link to={"/"} style={{ textDecoration: "none" }}>
+        <Logo src={logo} />
+      </Link>
       <NavHold>
         <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
           <Nav>Home</Nav>
