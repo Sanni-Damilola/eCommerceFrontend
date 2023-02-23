@@ -3,6 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { getAllProduct } from "../../Api/Api";
+import shirt from "../Images/shirt.png";
 
 const Product = () => {
   const getingProduct = useQuery({
@@ -28,7 +29,7 @@ const Product = () => {
             >
               <MainImage>
                 <ImageHold>
-                  <Image src="" />
+                  <Image src={shirt} />
                 </ImageHold>
                 <Title>{props.title}</Title>
                 <Desc>New design 2023</Desc>
