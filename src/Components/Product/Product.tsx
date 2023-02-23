@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
-import { AllProduct } from "../Api/Api";
 import pic from "../Assets/1.png";
 import { Link } from "react-router-dom";
+import { getAllProduct } from "../../Api/Api";
 
 const Product = () => {
   const getingProduct = useQuery({
     queryKey: ["products"],
-    queryFn: AllProduct,
+    queryFn: getAllProduct,
   });
 
   console.log(getingProduct);
