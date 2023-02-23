@@ -11,6 +11,7 @@ const Product = () => {
     queryFn: getAllProduct,
   });
 
+
   console.log(getingProduct);
   if (getingProduct?.data?.isLoading) return <h2>Loading</h2>;
 
@@ -98,7 +99,8 @@ const Ratting = styled.div`
   align-items: center;
   cursor: pointer;
 `;
-const MainImage = styled.div``;
+const MainImage = styled.div`
+`;
 const Image = styled.img`
   width: 100%;
   height: 100%;
