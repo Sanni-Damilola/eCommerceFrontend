@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import step1 from "../Images/step1.png"
-import step2 from "../Images/step2.png"
-import step3 from "../Images/step3.png"
-import step4 from "../Images/step4.png"
+import step1 from "../Images/step1.png";
+import step2 from "../Images/step2.png";
+import step3 from "../Images/step3.png";
+import step4 from "../Images/step4.png";
 
 const Ship = () => {
   return (
@@ -43,6 +43,8 @@ export default Ship;
 const Holder = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 const Card = styled.div`
   margin: 30px;
