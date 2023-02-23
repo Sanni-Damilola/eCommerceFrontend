@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
-import pic from "../Assets/1.png";
 import { Link } from "react-router-dom";
 import { getAllProduct } from "../../Api/Api";
 
@@ -29,7 +28,7 @@ const Product = () => {
             >
               <MainImage>
                 <ImageHold>
-                  <Image src={pic} />
+                  <Image src="" />
                 </ImageHold>
                 <Title>{props.title}</Title>
                 <Desc>New design 2023</Desc>
