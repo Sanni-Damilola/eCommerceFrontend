@@ -8,7 +8,7 @@ import { useMutation } from "@tanstack/react-query";
 import { UseAppDispach } from "../Global/Store";
 import { loginUser } from "../Global/ReduxState";
 import { postUser } from "../../Api/Api";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const dispatch = UseAppDispach();
