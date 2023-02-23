@@ -83,7 +83,7 @@ const NewArrival = () => {
             <ImageHold>
               <Image src={redbag} />
             </ImageHold>
-            <Title>Manhattan Toy WRT</Title>
+            <Title>Hand Bag</Title>
             <Desc>New design 2023</Desc>
             <PriceHold>
               <Price>$30.00</Price>
@@ -104,7 +104,7 @@ const NewArrival = () => {
             <ImageHold>
               <Image src={cap} />
             </ImageHold>
-            <Title>Manhattan Toy WRT</Title>
+            <Title>Cap</Title>
             <Desc>New design 2023</Desc>
             <PriceHold>
               <Price>$30.00</Price>
