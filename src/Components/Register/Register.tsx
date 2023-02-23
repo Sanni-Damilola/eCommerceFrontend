@@ -40,6 +40,7 @@ const Register = () => {
     },
   });
 
+  const navigate =
   const Submit = handleSubmit((data) => {
     post.mutate(data);
     reset();
@@ -67,15 +68,7 @@ const Register = () => {
           placeholder="Enter your password"
         />
         <p>{errors?.password && errors?.password?.message}</p>
-        {errors?.name?.message &&
-        errors?.email?.message &&
-        errors?.password?.message ? (
-          <MainButton type="submit">Register</MainButton>
-        ) : (
-          <Link style={{ textDecoration: "none" }} to={"/"}>
-            <MainButton type="submit">Register</MainButton>
-          </Link>
-        )}
+        <MainButton type="submit">Register</MainButton>
       </Card>
     </Container>
   );
