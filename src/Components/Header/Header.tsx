@@ -4,8 +4,8 @@ import { BsSearch } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import log from "./Assets/logo.png";
 import { NavLink } from "react-router-dom";
-import { UseAppDispach, useAppSelector } from "./Global/Store";
-import { logoutUser 
+import { UseAppDispach, useAppSelector } from "../Global/Store";
+import { logoutUser } from "../Global/ReduxState";
 import { Link } from "react-router-dom";
 
 const Header = () => {
