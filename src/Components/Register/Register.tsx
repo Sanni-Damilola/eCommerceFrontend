@@ -48,11 +48,17 @@ const Register = () => {
     <Container>
       <Card onSubmit={Submit}>
         <h3>Register</h3>
-        <input {...register("name")} placeholder="Enter your name" />
+        <Input
+        outLineValue={errors?.name ? "value" : ""}
+        {...register("name")} placeholder="Enter your name" />
         <p>{errors?.name && errors?.name?.message}</p>
-        <input {...register("email")} placeholder="Enter your email" />
+        <Input
+        outLineValue={errors?.email ? "value" : ""}
+        {...register("email")} placeholder="Enter your email" />
         <p>{errors?.email && errors?.email?.message}</p>
-        <input {...register("password")} placeholder="Enter your password" />
+        <Input
+        outLineValue={errors?.password ? "value" : ""}
+        {...register("password")} placeholder="Enter your password" />
         <p>{errors?.password && errors?.password?.message}</p>
         <MainButton type="submit">Register</MainButton>
       </Card>
@@ -61,6 +67,13 @@ const Register = () => {
 };
 
 export default Register;
+
+const Input = styled.input<{ outLineValue: string }>`
+  height: 35px;
+  width: 95%;
+  outline: ${({ outLineValue }) => (outLineValue ? "1px" : "0px")} solid red;
+  border: 1px solid #f1f1f1;
+`;
 
 const MainButton = styled.button`
   height: 45px;
@@ -83,16 +96,7 @@ const Card = styled.form`
   min-height: 300px;
   width: 400px;
   border: 1px solid #f1f1f1;
-  input {
-    height: 35px;
-    width: 95%;
-    /* margin: 10px; */
-    border: 1px solid #f1f1f1;
-    outline: border;
-    /* :focus {
-			border-color: red;
-		} */
-  }
+
   p {
     font-size: 11px;
     margin-bottom: 5px;
