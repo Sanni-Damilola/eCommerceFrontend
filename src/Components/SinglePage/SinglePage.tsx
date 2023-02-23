@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getOneProduct } from "../../Api/Api"; 
-import pic from "../Assets/1.png";
+import { getOneProduct } from "../../Api/Api";
 import { UseAppDispach, useAppSelector } from "../Global/Store";
 import { addToCart } from "../Global/ReduxState";
 const SinglePage = () => {
@@ -34,7 +33,7 @@ const SinglePage = () => {
   return (
     <Container>
       <First>
-        <img src={pic} />
+        <img src="" />
       </First>
       <Second>
         <h2>{getData?.data?.data?.title}</h2>
