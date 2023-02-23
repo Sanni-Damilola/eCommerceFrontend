@@ -5,9 +5,9 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
-
 import { UseAppDispach } from "../Global/Store";
 import { loginUser } from "../Global/ReduxState";
+import { postUser } from "../../Api/Api";
 
 const Register = () => {
   const dispatch = UseAppDispach();
@@ -32,7 +32,7 @@ const Register = () => {
 
   const post = useMutation({
     mutationKey: ["postUser"],
-    mutationFn: CreateUser,
+    mutationFn: postUser,
     onSuccess: (data) => {
       // console.log(data.data);
       dispatch(loginUser(data.data));

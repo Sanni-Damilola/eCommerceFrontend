@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { SingleProduct } from "../Api/Api";
 import pic from "../Assets/1.png";
 import { UseAppDispach, useAppSelector } from "../Global/Store";
 import { addToCart } from "../Global/ReduxState";
+import { getOneUser } from "../../Api/Api";
 const SinglePage = () => {
   const { id } = useParams();
   const dispatch = UseAppDispach();
@@ -19,7 +19,7 @@ const SinglePage = () => {
   const getData = useQuery({
     queryKey: ["products", id],
     queryFn: () => {
-      return SingleProduct(id);
+      return getOneUser(id);
     },
   });
 
