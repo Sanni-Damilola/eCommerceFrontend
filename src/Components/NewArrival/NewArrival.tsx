@@ -20,7 +20,7 @@ const NewArrival = () => {
             <ImageHold>
               <Image src={jumpRope} />
             </ImageHold>
-            <Title>Manhattan Toy WRT</Title>
+            <Title>Jump Rope Kids</Title>
             <Desc>New design 2023</Desc>
             <PriceHold>
               <Price>$30.00</Price>
@@ -62,7 +62,7 @@ const NewArrival = () => {
             <ImageHold>
               <Image src={umbrella} />
             </ImageHold>
-            <Title>Manhattan Toy WRT</Title>
+            <Title>Umbrella</Title>
             <Desc>New design 2023</Desc>
             <PriceHold>
               <Price>$30.00</Price>
