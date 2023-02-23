@@ -178,6 +178,7 @@ const Image = styled.img`
 const Holder = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-bottom: 70px;
 `;
