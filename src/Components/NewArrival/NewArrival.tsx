@@ -16,8 +16,6 @@ const NewArrival = () => {
         <span style={{ color: "gray" }}>REY backpacks & bags</span>
       </Head>
       <Holder>
-        <Link to={"/"} >
-        
         <Card>
           <MainImage>
             <ImageHold>
@@ -39,7 +37,6 @@ const NewArrival = () => {
             </PriceHold>
           </MainImage>
         </Card>
-        </Link>
         <Card>
           <MainImage>
             <ImageHold>
