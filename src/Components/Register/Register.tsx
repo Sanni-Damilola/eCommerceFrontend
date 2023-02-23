@@ -68,11 +68,11 @@ const Register = () => {
         />
         <p>{errors?.password && errors?.password?.message}</p>
         {errors?.email && errors?.name && errors?.password ? (
+          <MainButton type="submit">Register</MainButton>
+        ) : (
           <Link style={{ textDecoration: "none" }} to={"/"}>
             <MainButton type="submit">Register</MainButton>
           </Link>
-        ) : (
-          <MainButton type="submit">Register</MainButton>
         )}
       </Card>
     </Container>
