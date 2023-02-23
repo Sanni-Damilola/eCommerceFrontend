@@ -5,6 +5,7 @@ import jumpRope from "../Images/jumpRope.png";
 import manhattan from "../Images/manhattan.png";
 import umbrella from "../Images/umbrella.png";
 import redbag from "../Images/redbag.png";
+import cap from "../Images/cap.png";
 
 const NewArrival = () => {
   return (
@@ -101,7 +102,7 @@ const NewArrival = () => {
         <Card>
           <MainImage>
             <ImageHold>
-              <Image />
+              <Image src={cap} />
             </ImageHold>
             <Title>Manhattan Toy WRT</Title>
             <Desc>New design 2023</Desc>
@@ -169,7 +170,10 @@ const Ratting = styled.div`
   cursor: pointer;
 `;
 const MainImage = styled.div``;
-const Image = styled.img``;
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+`;
 
 const Holder = styled.div`
   display: flex;
