@@ -22,7 +22,7 @@ const Product = () => {
       </Head>
       <Holder>
         {getingProduct?.data?.data.map((props: any) => (
-          <Card>
+          <Card key={props._id}>
             <Link
               style={{ textDecoration: "none", color: "black" }}
               to={`/details/${props._id}`}
@@ -64,9 +64,6 @@ const ImageHold = styled.div`
   width: 250px;
   background-color: #f7f9fb;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 const Title = styled.div`
   font-weight: 700;
@@ -87,6 +84,7 @@ const Price = styled.div`
   width: 100px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
   border: 1px solid green;
   font-weight: 600;
@@ -98,15 +96,18 @@ const Ratting = styled.div`
   color: gray;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 const MainImage = styled.div``;
 const Image = styled.img`
-  width: 150px;
+  width: 100%;
+  height: 100%;
 `;
 
 const Holder = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-bottom: 70px;
 `;
