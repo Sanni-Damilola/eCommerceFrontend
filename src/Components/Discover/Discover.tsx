@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import pic1 from "../Assets/1.png";
-import pic2 from "../Assets/2.png";
-import pic3 from "../Assets/3.png";
+
 
 const Discover = () => {
   return (
@@ -18,7 +16,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src={pic1} />
+          <Second src="" />
         </Card>
         <Card bg="#FEF2F2">
           <First>
@@ -26,7 +24,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src={pic3} />
+          <Second src="" />
         </Card>
         <Card bg="#EFF6FF">
           <First>
@@ -34,7 +32,7 @@ const Discover = () => {
             <Sub>Shop from the latest top brands</Sub>
             <Button>Show me all</Button>
           </First>
-          <Second src={pic2} />
+          <Second src="" />
         </Card>
       </Holder>
     </Container>
