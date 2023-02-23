@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
 import jumpRope from "../Images/jumpRope.png";
+import manhattan from "../Images/manhattan.png";
 import umbrella from "../Images/umbrella.png";
-import leg from "../Images/leg.png";
 
 const NewArrival = () => {
   return (
@@ -58,7 +58,7 @@ const NewArrival = () => {
         <Card>
           <MainImage>
             <ImageHold>
-              <Image src={leg} />
+              <Image src={umbrella} />
             </ImageHold>
             <Title>Manhattan Toy WRT</Title>
             <Desc>New design 2023</Desc>
