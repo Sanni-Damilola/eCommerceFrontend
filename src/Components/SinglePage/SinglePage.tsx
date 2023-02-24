@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getOneProduct } from "../../Api/Api";
 import { UseAppDispach, useAppSelector } from "../Global/Store";
-import { addToCart } from "../Global/ReduxState";
+import { addToCart, removeFromCart } from "../Global/ReduxState";
 import shirt from "../Images/shirt.png";
 
 const SinglePage = () => {
@@ -53,7 +53,9 @@ const SinglePage = () => {
         </PriceHold>
         <Holder>
           <ButtonHold>
-            <But onClick={() => {}}>-</But>
+            <But onClick={() => {
+              dispatch(removeFromCart(getData?.data?.data))
+            }}>-</But>
             <Count>{readSingleItem[0]?.cartQuantity}</Count>
             <But
               disabled={
