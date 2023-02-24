@@ -39,7 +39,7 @@ const CartPage = () => {
                       <Price>In Stock</Price>
                       <Remove
                         onClick={() => {
-                          dispatch(clearAllCart);
+                          dispatch(clearAllCart());
                         }}
                       >
                         Remove
