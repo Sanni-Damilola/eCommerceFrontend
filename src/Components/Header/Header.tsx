@@ -41,7 +41,7 @@ const Header = () => {
         <Icon>
           <BsSearch />
         </Icon>
-        <Link to="/cart">
+        <Link style={{ textDecoration: "none", color: "black" }} to="/cart">
           <Icon>
             <AiOutlineShoppingCart />
             <Count>{readCarQunatity}</Count>

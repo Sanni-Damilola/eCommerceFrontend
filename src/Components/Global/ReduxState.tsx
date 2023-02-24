@@ -75,6 +75,7 @@ const ReduxState = createSlice({
 
     clearAllCart: (state) => {
       state.cart = state.clearCart;
+      state.totalQuantity = 0;
     },
   },
 });
