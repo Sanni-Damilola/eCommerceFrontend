@@ -5,7 +5,7 @@ import { UseAppDispach, useAppSelector } from "../Global/Store";
 import shirt from "../Images/shirt.png";
 
 const CartPage = () => {
-  const readCart = useAppSelector((state) => state.myReducer.cart);
+  const readCart = useAppSelector((state) => state.cart);
   const dispatch = UseAppDispach();
 
   return (
@@ -18,7 +18,7 @@ const CartPage = () => {
         <br />
         <MainHold>
           <div>
-            {readCart?.map((props) => (
+            {readCart?.map((props: any) => (
               <First>
                 <ImageHolder>
                   <Image src={shirt} />
@@ -37,13 +37,6 @@ const CartPage = () => {
                       }}
                     >
                       <Price>In Stock</Price>
-                      <Remove
-                        onClick={() => {
-                          dispatch(clearAllCart());
-                        }}
-                      >
-                        Remove
-                      </Remove>
                     </div>
                   </TextHold>
                 </ImageHolder>

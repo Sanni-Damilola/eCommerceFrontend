@@ -9,12 +9,10 @@ import { logoutUser } from "../Global/ReduxState";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const userData = useAppSelector((state) => state.myReducer.currentUser);
+  const userData = useAppSelector((state) => state.currentUser);
   const dispatch = UseAppDispach();
 
-  const readCarQunatity = useAppSelector(
-    (state) => state.myReducer.totalQuantity
-  );
+  const readCarQunatity = useAppSelector((state) => state.totalQuantity);
 
   console.log(readCarQunatity);
 

@@ -11,7 +11,7 @@ import shirt from "../Images/shirt.png";
 const SinglePage = () => {
   const { id } = useParams();
   const dispatch = UseAppDispach();
-  const readCart = useAppSelector((state) => state.myReducer.cart);
+  const readCart = useAppSelector((state) => state.cart);
 
   const readSingleItem = readCart.filter((el) => el._id === id);
 

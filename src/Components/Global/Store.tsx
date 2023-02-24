@@ -10,33 +10,36 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-import storage from "redux-persist/lib/storage";
 import myReducer from "./ReduxState";
 import { TypedUseSelectorHook, useSelector } from "react-redux/es/exports";
+import storage from "redux-persist/lib/storage";
+import { PersistGate } from "redux-persist/integration/react";
+
 
 const persistConfig = {
-  key: "ecomerece06",
+  key: "eCommerce",
   version: 1,
   storage,
 };
 
 const persistedReducer = persistReducer(persistConfig, myReducer);
 
-// export const store = configureStore({
-// 	reducer: persistedReducer,
-// 	middleware: (getDefaultMiddleware) =>
-// 		getDefaultMiddleware({
-// 			serializableCheck: {
-// 				ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-// 			},
-// 		}),
-// });
 
 export const store = configureStore({
-  reducer: {
-    myReducer,
-  },
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
 });
+
+// export const store = configureStore({
+//   reducer: {
+//     myReducer,
+//   },
+// });
 
 // define your despatch and selector
 
