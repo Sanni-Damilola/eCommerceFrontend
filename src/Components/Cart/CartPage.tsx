@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { addToCart, removeFromCart } from "../Global/ReduxState";
+import { addToCart, clearAllCart, removeFromCart } from "../Global/ReduxState";
 import { UseAppDispach, useAppSelector } from "../Global/Store";
 import shirt from "../Images/shirt.png";
 
 const CartPage = () => {
   const readCart = useAppSelector((state) => state.myReducer.cart);
   const dispatch = UseAppDispach();
+
   return (
     <Container>
       <Holder>
@@ -36,7 +37,13 @@ const CartPage = () => {
                       }}
                     >
                       <Price>In Stock</Price>
-                      <Remove>Remove</Remove>
+                      <Remove
+                        onClick={() => {
+                          dispatch(clearAllCart);
+                        }}
+                      >
+                        Remove
+                      </Remove>
                     </div>
                   </TextHold>
                 </ImageHolder>

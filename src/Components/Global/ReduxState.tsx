@@ -79,7 +79,12 @@ const ReduxState = createSlice({
   },
 });
 
-export const { loginUser, logoutUser, addToCart, removeFromCart } =
-  ReduxState.actions;
+export const {
+  loginUser,
+  logoutUser,
+  addToCart,
+  removeFromCart,
+  clearAllCart,
+} = ReduxState.actions;
 
 export default ReduxState.reducer;
