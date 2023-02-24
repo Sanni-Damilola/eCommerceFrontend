@@ -6,6 +6,8 @@ import { useQuery } from "@tanstack/react-query";
 import { getOneProduct } from "../../Api/Api";
 import { UseAppDispach, useAppSelector } from "../Global/Store";
 import { addToCart } from "../Global/ReduxState";
+import shirt from "../Images/shirt.png";
+
 const SinglePage = () => {
   const { id } = useParams();
   const dispatch = UseAppDispach();
@@ -33,7 +35,7 @@ const SinglePage = () => {
   return (
     <Container>
       <First>
-        <img src="" />
+        <img src={shirt} />
       </First>
       <Second>
         <h2>{getData?.data?.data?.title}</h2>
@@ -51,12 +53,7 @@ const SinglePage = () => {
         </PriceHold>
         <Holder>
           <ButtonHold>
-            <But
-              onClick={() => {
-              }}
-            >
-              -
-            </But>
+            <But onClick={() => {}}>-</But>
             <Count>{readSingleItem[0]?.cartQuantity}</Count>
             <But
               disabled={
