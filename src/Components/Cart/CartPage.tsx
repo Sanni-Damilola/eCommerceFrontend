@@ -36,7 +36,7 @@ const CartPage = () => {
                       }}
                     >
                       <Price>In Stock</Price>
-                      <div>Remove</div>
+                      <Remove>Remove</Remove>
                     </div>
                   </TextHold>
                 </ImageHolder>
@@ -88,6 +88,14 @@ const CartPage = () => {
 };
 
 export default CartPage;
+
+const Remove = styled.div`
+  cursor: pointer;
+  background-color: red;
+  padding: 7px 11px;
+  color: white;
+  border-radius: 5px;
+`;
 
 const MainButton = styled.button`
   height: 45px;
