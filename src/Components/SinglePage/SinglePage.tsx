@@ -53,9 +53,13 @@ const SinglePage = () => {
         </PriceHold>
         <Holder>
           <ButtonHold>
-            <But onClick={() => {
-              dispatch(removeFromCart(getData?.data?.data))
-            }}>-</But>
+            <But
+              onClick={() => {
+                dispatch(removeFromCart(getData?.data?.data));
+              }}
+            >
+              -
+            </But>
             <Count>{readSingleItem[0]?.cartQuantity}</Count>
             <But
               disabled={

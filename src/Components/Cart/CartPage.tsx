@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { addToCart, removeFromCart } from "../Global/ReduxState";
 import { UseAppDispach, useAppSelector } from "../Global/Store";
+import shirt from "../Images/shirt.png";
 
 const CartPage = () => {
   const readCart = useAppSelector((state) => state.myReducer.cart);
@@ -19,9 +20,9 @@ const CartPage = () => {
             {readCart?.map((props) => (
               <First>
                 <ImageHolder>
-                  <Image />
+                  <Image src={shirt} />
                   <TextHold>
-                    <span>zdfj</span>
+                    <span>shirt</span>
                     <br />
                     <br />
                     <br />
@@ -168,10 +169,11 @@ const MainHold = styled.div`
   display: flex;
 `;
 
-const Image = styled.div`
+const Image = styled.img`
   height: 150px;
   width: 150px;
   background-color: #f1f1f1;
+  object-fit: cover;
   margin-right: 10px;
   border-radius: 5px;
 `;
