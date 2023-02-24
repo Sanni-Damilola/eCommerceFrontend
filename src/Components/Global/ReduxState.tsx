@@ -22,6 +22,7 @@ const initialState = {
   cart: [] as Array<CartData>,
   totalPrice: 0,
   totalQuantity: 0,
+  clearCart: [],
 };
 
 const ReduxState = createSlice({
@@ -70,6 +71,10 @@ const ReduxState = createSlice({
       // ;
 
       // console.log("this is filter", check);
+    },
+
+    clearAllCart: (state) => {
+      state.cart = state.clearCart;
     },
   },
 });
