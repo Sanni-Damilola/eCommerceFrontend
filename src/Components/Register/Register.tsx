@@ -46,14 +46,16 @@ const Register = () => {
     post.mutate(data);
     navigate("/");
     reset();
-    Swal.fire(
-      {
-        title: "login successful",
-        timer: 3000,
-        
-      }
-    )
+    Swal.fire({
+      title: "login successful",
+      timer: 3000,
+      icon: "success",
+      text: `welcome ${post?.data?.message}`
+    });
   });
+
+  console.log("here", post?.data?.message);
+  
 
   return (
     <Container>
@@ -95,7 +97,7 @@ const Input = styled.input<{ outLineValue: string }>`
 const MainButton = styled.button`
   height: 45px;
   width: 250px;
-  background-color: #123456;  
+  background-color: #123456;
   color: white;
   font-size: 17px;
   font-weight: 700;
