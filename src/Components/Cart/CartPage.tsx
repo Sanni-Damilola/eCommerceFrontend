@@ -11,9 +11,19 @@ const CartPage = () => {
   return (
     <Container>
       <Holder>
-        <h2>Shopping Cart</h2>
-        <p>Homepage/Clothing Categories/Shopping Cart</p>
-
+        <Wrapper>
+          <Right>
+            <h2>Shopping Cart</h2>
+            <p>Homepage/Clothing Categories/Shopping Cart</p>
+          </Right>
+          <Remove
+            onClick={() => {
+              dispatch(clearAllCart());
+            }}
+          >
+            Clear Cart
+          </Remove>
+        </Wrapper>
         <br />
         <br />
         <MainHold>
@@ -89,12 +99,21 @@ const CartPage = () => {
 
 export default CartPage;
 
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+`;
+const Right = styled.div``;
+
 const Remove = styled.div`
   cursor: pointer;
   background-color: red;
-  padding: 7px 11px;
+  padding: 10px 15px;
   color: white;
   border-radius: 5px;
+  font-weight: 500;
 `;
 
 const MainButton = styled.button`
