@@ -54,7 +54,7 @@ const Register = () => {
     });
   });
 
-  console.log("here", post?.data?.message);
+  console.log("here", post?.damessage);
   
 
   return (
