@@ -50,12 +50,6 @@ const ReduxState = createSlice({
       }
       //
       state.totalQuantity += 1;
-      // state.totalPrice +=
-      // state.cart[check].cartQuantity * state.cart[check].price;
-      // state.totalPrice = state.cart.reduce(
-      // (accc, next) => accc + next.cartQuantity * next.price,
-      // 0,
-      // );
     },
 
     removeFromCart: (state, { payload }: PayloadAction<CartData>) => {
@@ -68,14 +62,11 @@ const ReduxState = createSlice({
       }
 
       state.totalQuantity -= 1;
-      // ;
-
-      // console.log("this is filter", check);
     },
 
     clearAllCart: (state) => {
-      state.cart = state.clearCart;
-      state.totalQuantity = 0;
+      state.cart = state.clearCart; // clear cart
+      state.totalQuantity = 0; // clear totalQuanity
     },
   },
 });
