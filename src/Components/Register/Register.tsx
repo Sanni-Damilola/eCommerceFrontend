@@ -54,7 +54,7 @@ const Register = () => {
     });
   });
 
-  console.log("here", postUser);
+  console.log("here", post);
   
 
   return (

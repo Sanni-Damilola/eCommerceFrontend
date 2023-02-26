@@ -14,8 +14,6 @@ const Header = () => {
 
   const readCarQunatity = useAppSelector((state) => state.totalQuantity);
 
-  console.log(readCarQunatity);
-
   return (
     <Container>
       <Link to={"/"} style={{ textDecoration: "none" }}>
